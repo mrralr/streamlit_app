@@ -70,6 +70,7 @@ value = 0
 def load(increment):
   while(increment < 1):
     value += increment
+    return value
 
 import pandas as pd
 import numpy as np
