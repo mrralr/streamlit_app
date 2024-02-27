@@ -54,7 +54,7 @@ st.time_input("schedule the meeting")
 
 st.text_area("big paragraph for explanatiosn")
 
-st.file_upload("upload ur passwords")
+st.file_uploader("upload ur passwords")
 
 st.color_picker("whats your fav color mines blue")
 
