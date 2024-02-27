@@ -23,3 +23,6 @@ st.markdown("### hmmmmmm")
 st.markdown(":rofl:")
 
 st.text("EEEE")
+st.caption("this is a caption")
+
+st.latex(r''' a+b x^2+c''')
