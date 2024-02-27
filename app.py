@@ -71,6 +71,7 @@ def load(increment):
   while(increment < 1):
     value += increment
     return value
+  return 1  
 
 import pandas as pd
 import numpy as np
