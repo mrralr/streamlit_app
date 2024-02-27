@@ -60,4 +60,20 @@ st.color_picker("whats your fav color mines blue")
 
 st.progress(90)
 
-with st.spinner("im cooking")
+with st.spinner("im cooking"):
+  t.sleep(5)
+
+st.balloons()
+
+st.sidebar.title("this ismy sidbear")
+st.sidebar.text_input("give your mail")
+st.sidebar.text_input("passwordpls")
+st.sidebar.button("Submit")
+st.radio("Status",["Student", "Teacher", "None"])
+
+import pancias as pd
+import numpy as np
+
+st.title("charts")
+data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
+st.bar_chart(data)
