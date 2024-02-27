@@ -83,7 +83,7 @@ def click_button1():
 if st.button('Show Graphs'):
   click_button1()
 
-if st.session_state[button1]:
+if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
 
   st.title("bar chart")
