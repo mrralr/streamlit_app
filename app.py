@@ -67,9 +67,9 @@ st.sidebar.button("Submit")
 st.radio("Status",["Student", "Teacher", "None"])
 
 value = 0
-def load(increment):
-  while(increment < 1):
-    value = value + increment
+def load():
+  while(value < 1):
+    value = value + 0.05
     return value
   return 1  
 
@@ -97,7 +97,7 @@ elif hide_button:
 with st.spinner("Loading"):
   t.sleep(1)
 
-st.progress(load(0.005))
+st.progress(load())
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
