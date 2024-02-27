@@ -58,8 +58,6 @@ st.file_uploader("upload ur passwords")
 
 st.color_picker("whats your fav color mines blue")
 
-st.progress(90)
-
 # st.balloons()
 
 st.sidebar.title("this ismy sidbear")
@@ -67,6 +65,11 @@ st.sidebar.text_input("give your mail")
 st.sidebar.text_input("passwordpls")
 st.sidebar.button("Submit")
 st.radio("Status",["Student", "Teacher", "None"])
+
+value = 0
+def load(increment):
+  while(increment < 1):
+    value += increment
 
 import pandas as pd
 import numpy as np
@@ -91,6 +94,8 @@ elif hide_button:
 
 with st.spinner("Loading"):
   t.sleep(1)
+
+st.progress(load(0.005))
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
