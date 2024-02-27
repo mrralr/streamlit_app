@@ -71,7 +71,7 @@ st.sidebar.text_input("passwordpls")
 st.sidebar.button("Submit")
 st.radio("Status",["Student", "Teacher", "None"])
 
-import pancias as pd
+import pandas as pd
 import numpy as np
 
 st.title("charts")
