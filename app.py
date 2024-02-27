@@ -61,7 +61,7 @@ st.color_picker("whats your fav color mines blue")
 st.progress(90)
 
 with st.spinner("im cooking"):
-  t.sleep(5)
+  t.sleep(1)
 
 st.balloons()
 
