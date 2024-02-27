@@ -60,10 +60,7 @@ st.color_picker("whats your fav color mines blue")
 
 st.progress(90)
 
-with st.spinner("im cooking"):
-  t.sleep(1)
-
-st.balloons()
+# st.balloons()
 
 st.sidebar.title("this ismy sidbear")
 st.sidebar.text_input("give your mail")
@@ -87,6 +84,9 @@ if(button1 == False):
     click_button1(True)
 elif st.button('Hide Graphs'):
     click_button1(False)
+
+with st.spinner("Loading"):
+  t.sleep(1)
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
