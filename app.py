@@ -75,7 +75,7 @@ import pandas as pd
 import numpy as np
 
 if 'button1' not in st.session_state:
-  st.session_state[button1] = False
+  st.session_state.button1 = False
 
 def click_button1():
   st.session_state.button1 = True
