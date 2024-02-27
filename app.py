@@ -75,13 +75,13 @@ import pandas as pd
 import numpy as np
 
 if 'button1' not in st.session_state:
-  st.session_state.button1 = False
+  st.session_state[button1] = False
 
-def click_button(button):
-  return st.session_state[button] = True
+def click_button1():
+  return st.session_state.button1 = True
 
 if st.button('Show Graphs'):
-  click_button('button1')
+  click_button1()
 
 if st.session_state[button1]:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
