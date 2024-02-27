@@ -32,8 +32,7 @@ st.latex(r''' a+b x^2+c''')
 
 st.checkbox('no')
 
-if st.button("shuuuuush"):
-  st.checkbox('no')
+st.button("shuuuuush")
 
 st.radio("Who let him cook", ["Me", "hasan (deffo not)", "rayan", "mr rashid"])
 
