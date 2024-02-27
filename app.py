@@ -69,7 +69,7 @@ st.radio("Status",["Student", "Teacher", "None"])
 value = 0
 def load(increment):
   while(increment < 1):
-    value += increment
+    value = value + increment
     return value
   return 1  
 
