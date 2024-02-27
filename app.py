@@ -92,18 +92,18 @@ with st.spinner("Loading"):
 
 value = 0
 
-st.progress(value)
+progres = st.progress(value)
 
 t.sleep(0.1)
-value += 0.2
+progress = 0.2
 t.sleep(0.1)
-value += 0.2
+progress = 0.4
 t.sleep(0.1)
-value += 0.2
+progress = 0.6
 t.sleep(0.1)
-value += 0.2
+progress = 0.8
 t.sleep(0.1)
-value += 0.2
+progress = 1
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
