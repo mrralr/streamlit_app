@@ -92,6 +92,9 @@ elif hide_button:
 with st.spinner("Loading"):
   t.sleep(1)
 
+button1 = st.session_state.button1
+opposite = not button1
+
 show_button = st.button('Show Graphs', disabled=button1)
 hide_button = st.button('Hide Graphs', disabled=opposite)
 
