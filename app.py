@@ -74,6 +74,16 @@ st.radio("Status",["Student", "Teacher", "None"])
 import pandas as pd
 import numpy as np
 
-st.title("charts")
+
 data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
+
+st.title("bar chart")
 st.bar_chart(data)
+
+st.title("line chart")
+st.line_chart(data)
+
+st.title("area chart")
+st.area_chart(data)
+
+
