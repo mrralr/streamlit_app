@@ -1,4 +1,5 @@
 import streamlit as st
+import time as t
 
 st.image("TransparentGraphicLogo.png")
 
@@ -28,3 +29,35 @@ st.text("EEEE")
 st.caption("this is a caption")
 
 st.latex(r''' a+b x^2+c''')
+
+st.checkbox('no')
+
+st.button("shuuuuush")
+
+st.radio("Who let him cook", ["Me", "hasan (deffo not)", "rayan", "mr rashid"])
+
+st.selectbox("dropdown", ["yuh", "nah", "immma do my own thing"])
+
+st.multiselect("pick", ["kebab rolls", "chicken tikka", "butter chicken"])
+
+st.select_slider("Rate abd hasan out of 10", ["0.2", "0", "-1", "0.1"])
+
+st.slider("What is your Age?", 0, 100)
+
+st.number_input("Number pls")
+
+st.text_input("email address pls")
+
+st.date_input("let me cook when?")
+
+st.time_input("schedule the meeting")
+
+st.text_area("big paragraph for explanatiosn")
+
+st.file_upload("upload ur passwords")
+
+st.color_picker("whats your fav color mines blue")
+
+st.progress(90)
+
+with st.spinner("im cooking")
