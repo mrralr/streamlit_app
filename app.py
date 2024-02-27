@@ -94,15 +94,15 @@ value = 0
 
 st.progress(value)
 
-time.sleep(0.1)
+t.sleep(0.1)
 value += 0.2
-time.sleep(0.1)
+t.sleep(0.1)
 value += 0.2
-time.sleep(0.1)
+t.sleep(0.1)
 value += 0.2
-time.sleep(0.1)
+t.sleep(0.1)
 value += 0.2
-time.sleep(0.1)
+t.sleep(0.1)
 value += 0.2
 
 if st.session_state.button1 == True:
