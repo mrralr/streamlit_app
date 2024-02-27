@@ -78,7 +78,7 @@ if 'button1' not in st.session_state:
   st.session_state[button1] = False
 
 def click_button1():
-  return st.session_state.button1 = True
+  st.session_state.button1 = True
 
 if st.button('Show Graphs'):
   click_button1()
