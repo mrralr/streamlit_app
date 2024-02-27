@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.image("TransparentGraphicLogo.png")
+
 st.title("oboboooaoo")
 
 st.header("eesaesesa")
