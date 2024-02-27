@@ -85,8 +85,7 @@ button1 = st.session_state.button1
 if(button1 == False):
   if st.button('Show Graphs'):
     click_button1(True)
-else
-  if st.button('Hide Graphs'):
+elif st.button('Hide Graphs'):
     click_button1(False)
 
 if st.session_state.button1 == True:
