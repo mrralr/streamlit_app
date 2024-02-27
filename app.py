@@ -66,13 +66,6 @@ st.sidebar.text_input("passwordpls")
 st.sidebar.button("Submit")
 st.radio("Status",["Student", "Teacher", "None"])
 
-value = 0
-def load():
-  while(value < 1):
-    value = value + 0.05
-    return value
-  return 1  
-
 import pandas as pd
 import numpy as np
 
@@ -97,7 +90,20 @@ elif hide_button:
 with st.spinner("Loading"):
   t.sleep(1)
 
-st.progress(load())
+value = 0
+
+st.progress(value)
+
+time.sleep(0.1)
+value += 0.2
+time.sleep(0.1)
+value += 0.2
+time.sleep(0.1)
+value += 0.2
+time.sleep(0.1)
+value += 0.2
+time.sleep(0.1)
+value += 0.2
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
