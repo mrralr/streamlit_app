@@ -74,16 +74,24 @@ st.radio("Status",["Student", "Teacher", "None"])
 import pandas as pd
 import numpy as np
 
+if 'clicked' not in st.session_state:
+    st.session_state.clicked = False
 
-data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
+def click_button():
+    st.session_state.clicked = True
 
-st.title("bar chart")
-st.bar_chart(data)
+st.button('Show Graphs', on_click=click_button)
 
-st.title("line chart")
-st.line_chart(data)
+if st.session_state.clicked:
+  data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
 
-st.title("area chart")
-st.area_chart(data)
+  st.title("bar chart")
+  st.bar_chart(data)
+
+  st.title("line chart")
+  st.line_chart(data)
+
+  st.title("area chart")
+  st.area_chart(data)
 
 
