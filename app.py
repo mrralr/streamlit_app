@@ -80,8 +80,8 @@ def click_button1(state):
 button1 = st.session_state.button1
 opposite = not button1
 
-show_button = st.button('Show Graphs', disabled=button1)
-hide_button = st.button('Hide Graphs', disabled=opposite)
+show_button = st.button('Show Graphs')
+hide_button = st.button('Hide Graphs')
 
 if(button1 == False):
   if show_button:
@@ -91,12 +91,6 @@ elif hide_button:
 
 with st.spinner("Loading"):
   t.sleep(1)
-
-button1 = st.session_state.button1
-opposite = not button1
-
-show_button = st.button('Show Graphs', disabled=button1)
-hide_button = st.button('Hide Graphs', disabled=opposite)
 
 if st.session_state.button1 == True:
   data = pd.DataFrame(np.random.randn(50,2),columns=["money","bishes"])
