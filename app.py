@@ -1,6 +1,9 @@
 import streamlit as st
 import time as t
 
+import pandas as pd
+import numpy as np
+
 st.sidebar.image("TransparentGraphicLogo.png", use_column_width=True)
 st.sidebar.title("Stuck On Saturn")
 
