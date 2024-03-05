@@ -34,9 +34,18 @@ global home_btn
 if st.session_state.home_btn:
   home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
 
-  data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
   st.title("Home")
-  st.bar_chart(data)
+  
+  tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+  
+  data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
+
+  tab1.subheader("A tab with a chart")
+  tab1.line_chart(data)
+
+  tab2.subheader("A tab with the data")
+  tab2.write(data)
+
 else:
   home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
 
@@ -49,10 +58,18 @@ global la_btn
 
 if st.session_state.la_btn:
   la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
+
+st.title("Location Analaysis")
   
-  data = pd.DataFrame(np.random.randn(50,2),columns=["location","analysis"])
-  st.title("Location Analysis")
-  st.bar_chart(data)
+  tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+  
+  data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
+
+  tab1.subheader("A tab with a chart")
+  tab1.line_chart(data)
+
+  tab2.subheader("A tab with the data")
+  tab2.write(data)
 else:
   la_btn = st.sidebar.button("Location Analysis", type="secondary", use_container_width=True)
 
