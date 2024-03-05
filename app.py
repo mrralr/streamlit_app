@@ -34,7 +34,7 @@ global home_btn
 if st.session_state.home_btn:
   home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
 
-  st.title("Home")
+  st.header("Home", divider="gray")
   
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
@@ -59,7 +59,7 @@ global la_btn
 if st.session_state.la_btn:
   la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
 
-  st.title("Location Analaysis")
+  st.header("Location Analaysis", divider="gray")
 
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
