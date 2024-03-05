@@ -25,6 +25,14 @@ def click_labtn():
 import pandas as pd
 import numpy as np
 
+supermarket_data = pd.read_excel(
+  io='superstore.xlsm',
+  engine='openpyxl',
+  sheet_name='superstore',
+  usecols='O:P',
+  nrows=1000,
+)
+
 # Home Button
 
 photo = "TransparentGraphicLogo.png"
@@ -38,7 +46,7 @@ if st.session_state.home_btn:
   
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
-  data = pd.DataFrame(np.random.randn(50,2),columns=["Home","Page"])
+  data = pd.DataFrame(supermarket_data)
 
   tab1.subheader("A tab with a chart")
   tab1.line_chart(data)
@@ -63,7 +71,7 @@ if st.session_state.la_btn:
 
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
-  data = pd.DataFrame(np.random.randn(50,2),columns=["Location","Analysis"])
+  data = pd.DataFrame(supermarket_data)
 
   tab1.subheader("A tab with a chart")
   tab1.line_chart(data)
