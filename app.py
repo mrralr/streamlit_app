@@ -25,9 +25,6 @@ def click_labtn():
 # Home Button
 
 global home_btn
-
-if st.session_state.home_btn:
-  click_homebtn()
   
 if st.session_state.home_btn:
     home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
@@ -41,8 +38,6 @@ if home_btn:
 
 global la_btn
 
-if st.session_state.la_btn:
-  click_labtn()
 if st.session_state.la_btn:
   la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
 else:
