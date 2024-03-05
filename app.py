@@ -25,12 +25,10 @@ def click_labtn():
 import pandas as pd
 import numpy as np
 
-import plotly.express as px
-
 supermarket_data = pd.read_excel(
   io='superstore.xlsm',
   engine='openpyxl',
-  sheet_name='superstore',
+  sheet_name='Superstore',
   usecols='O:P',
   nrows=1000,
 )
