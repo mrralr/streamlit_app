@@ -35,7 +35,7 @@ if st.session_state.home_btn:
   home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
 
   data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
-  st.title("bar chart")
+  st.title("Home")
   st.bar_chart(data)
 else:
   home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
@@ -51,7 +51,7 @@ if st.session_state.la_btn:
   la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
   
   data = pd.DataFrame(np.random.randn(50,2),columns=["location","analysis"])
-  st.title("bar chart")
+  st.title("Location Analysis")
   st.bar_chart(data)
 else:
   la_btn = st.sidebar.button("Location Analysis", type="secondary", use_container_width=True)
