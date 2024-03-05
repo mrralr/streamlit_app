@@ -1,9 +1,6 @@
 import streamlit as st
 import time as t
 
-import pandas as pd
-import numpy as np
-
 st.sidebar.image("TransparentGraphicLogo.png", use_column_width=True)
 st.sidebar.title("Stuck On Saturn")
 
@@ -25,6 +22,9 @@ def click_labtn():
   st.session_state.home_btn = False
   st.experimental_rerun()
 
+import pandas as pd
+import numpy as np
+
 # Home Button
 
 photo = "TransparentGraphicLogo.png"
@@ -32,11 +32,11 @@ photo = "TransparentGraphicLogo.png"
 global home_btn
   
 if st.session_state.home_btn:
-    home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
+  home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
 
   data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
 else:
-    home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
+  home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
 
 if home_btn:
   click_homebtn()
