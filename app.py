@@ -59,8 +59,8 @@ global la_btn
 if st.session_state.la_btn:
   la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
 
-st.title("Location Analaysis")
-  
+  st.title("Location Analaysis")
+
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
   data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
