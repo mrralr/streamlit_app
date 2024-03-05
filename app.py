@@ -15,10 +15,12 @@ if 'la_btn' not in st.session_state:
 def click_homebtn():
   st.session_state.home_btn = True
   st.session_state.la_btn = False
+  st.experimental_rerun()
 
 def click_labtn():
   st.session_state.la_btn = True
   st.session_state.home_btn = False
+  st.experimental_rerun()
 
 # Home Button
 
