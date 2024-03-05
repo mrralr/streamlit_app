@@ -29,7 +29,7 @@ photo = "TransparentGraphicLogo.png"
 global home_btn
   
 if st.session_state.home_btn:
-    home_btn = st.sidebar.button("Home", type="primary", use_container_width=True, args=(photo)
+    home_btn = st.sidebar.button("Home", type="primary", use_container_width=True, args=photo)
 else:
     home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
 
