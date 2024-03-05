@@ -38,7 +38,7 @@ if st.session_state.home_btn:
   
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
-  data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
+  data = pd.DataFrame(np.random.randn(50,2),columns=["Home","Page"])
 
   tab1.subheader("A tab with a chart")
   tab1.line_chart(data)
@@ -63,7 +63,7 @@ if st.session_state.la_btn:
 
   tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
   
-  data = pd.DataFrame(np.random.randn(50,2),columns=["home","home"])
+  data = pd.DataFrame(np.random.randn(50,2),columns=["Location","Analysis"])
 
   tab1.subheader("A tab with a chart")
   tab1.line_chart(data)
