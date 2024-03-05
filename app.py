@@ -22,25 +22,26 @@ def click_labtn():
   st.session_state.la_btn = True
   st.session_state.home_btn = False
 
-home_btn = st.session_state.home_btn
-la_btn = st.session_state.la_btn
-
 # Home Button
+
+global home_btn
+
+if st.session_state.home_btn:
+  home_btn = st.sidebar.button("Home", type="primary", use_container_width=True)
+else:
+  home_btn = st.sidebar.button("Home", type="secondary", use_container_width=True)
 
 if home_btn:
   click_homebtn()
 
-if st.session_state.home_btn:
-  st.sidebar.button("Home", type="primary", use_container_width=True)
-else:
-  st.sidebar.button("Home", type="secondary", use_container_width=True)
-
 # Location Analysis Button
+
+global la_btn
+
+if st.session_state.la_btn:
+  la_btn = st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
+else:
+  la_btn = st.sidebar.button("Location Analysis", type="secondary", use_container_width=True)
 
 if la_btn:
   click_labtn()
-
-if st.session_state.la_btn:
-  st.sidebar.button("Location Analysis", type="primary", use_container_width=True)
-else:
-  st.sidebar.button("Location Analysis", type="secondary", use_container_width=True)
