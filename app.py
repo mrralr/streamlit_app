@@ -4,6 +4,6 @@ import time as t
 st.sidebar.image("TransparentGraphicLogo.png", use_column_width=True)
 st.sidebar.title("Stuck On Saturn")
 
-st.sidebar.button("Home")
+st.sidebar.button("Home", use_coloumn_width=False)
 
 
