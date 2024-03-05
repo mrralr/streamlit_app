@@ -4,8 +4,6 @@ import time as t
 st.sidebar.image("TransparentGraphicLogo.png", use_column_width=True)
 st.sidebar.title("Stuck On Saturn")
 
-st.sidebar.button("Home", type="primary", use_container_width=True)
-
 # Button Session States
 
 if 'home_btn' not in st.session_state:
