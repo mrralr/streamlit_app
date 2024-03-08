@@ -1,18 +1,6 @@
 import streamlit as st
 import time as t
 
-button_style = """
-        <style>
-        .stButton > button {
-            color: blue;
-            background: gray;
-            width: 100px;
-            height: 50px;
-        }
-        </style>
-        """
-st.markdown(button_style, unsafe_allow_html=True)
-
 st.sidebar.image("TransparentGraphicLogo.png", use_column_width=True)
 st.sidebar.title("Stuck On Saturn")
 
